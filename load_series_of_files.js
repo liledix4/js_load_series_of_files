@@ -36,7 +36,7 @@ export function loadSeriesOfFiles(startingFilePath, callback) {
             if (addToFileData !== null)
                 fileData.push(addToFileData);
             if (callback)
-                callback();
+                checkIfFilesAreLoaded(callback);
         }
     );
 }
